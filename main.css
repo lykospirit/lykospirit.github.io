@@ -1,0 +1,43 @@
+h1 {
+    font-family: "Open Sans", "Roboto", "Arial", "Verdana", sans-serif;
+    color: #555599;
+    text-align: center;
+}
+
+body {
+    background-color: #eee;
+}
+
+#main-text {
+    width: 60%;
+    margin: 0 auto;
+    max-width: 800px;
+    min-width: 400px;
+}
+
+.post {
+    margin-left: 12px;
+    font-family: "Open Sans", "Roboto", "Arial", "Verdana", sans-serif;
+}
+
+.title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #222266;
+}
+
+.content {
+    margin: 4px 12px 4px 12px;
+    text-align: justify;
+}
+
+.date {
+    text-align: right;
+    color: #999999;
+    font-size: 10pt;
+}
+
+.splitline {
+    margin: 16px 0;
+    border-top: 1px solid #bbb;
+}
