@@ -10,6 +10,53 @@
         <div id="main-text">
             <div class="post">
                 <!-- Date, Title, Content -->
+                <div class="title">Motion Editing II</div>
+                <div class="content">
+                    Several thoughts on the respective papers discussed this session:
+
+                    <ol>
+                        <li><a href="https://dl.acm.org/doi/10.1145/2897824.2925970?preflayout=flat">SketchiMo - Sketch-based Motion Editing for Articulated Characters (Choi et. al., 2016)</a> <br>
+                        Interesting, useful for quick storyboarding, easier to set up scenes and interactions between characters to get a high-level idea of how a scene should play out. When sketching the 2D line, how does the program decide what 3D line that maps to, since there are infinitely many possibilities?</li><br>
+
+                        <li><a href="https://www.juew.org/publication/JueAniFilter.pdf">The Cartoon Animation Filter (Wang et. al., 2006)</a> <br>
+                        Takes a lot of ideas from computer vision and applies it to animation. Discretization of Laplacian of Gaussian is also used in CV to compute image gradients for, as an example, edge detection. The resulting animation still looks very janky and unnatural, however, and would probably need touching up by an animator.</li><br>
+
+                        <li><a href="https://dl.acm.org/doi/10.1145/2858036.2858386">Motion Amplifiers - Sketching Dynamic Illustrations Using the Principles of 2D Animation (Kazi et. al., 2016)</a> <br>
+                        Much like (2), not convinced it would translate well to a 3D situation. The authors of this paper leaned heavily into animating specifically 2D sketches, however, and their technique works well with this medium.</li><br>
+
+                        <li><a href="https://dl.acm.org/doi/10.1145/3355089.3356505">Neural State Machine for Character-Scene Interactions (Starke et. al., 2019)</a> <br>
+                        The results are very cool. Surprised that the results look that good given just 2 hours' worth of MoCap data. An interesting point on reliability was raised: is it possible to introduce sufficient constraints to guarantee realistic enough motion from the network?</li>
+                    </ol>
+                </div>
+                <div class="date">Posted by Colin Gay on 9 Feb 2020</div>
+                <div class="splitline"></div>
+            </div>
+                <div class="post">
+                    <!-- Date, Title, Content -->
+                    <div class="title">Motion Editing I</div>
+                    <div class="content">
+                        While I had learned before that singularities exist when using Euler angles, it was good to see a concrete example of gimbal lock when working with Euler angles. The discussion on quaternions was also one of the most comprehensive and understandable introductions to the subject. It was also interesting to learn about the exponential map, and it would be interesting to see how the singularities in this representation manifest in an animation.<br><br>
+
+                        Motion graphs were also a very clever idea. An immediate application that stood out to me was in games, where the player can control a character through different interactions with the environment. While it may not work with something that requires extremely quick transitions, like in a sports game, it would work for, for example, transitioning between walking, running, climbing stairs, picking up objects, and so on.<br><br>
+
+                        A game that might (?) use a variant of this technique is Assassin's Creed, where the player regularly transitions between walking, running, fighting, and different climbing animations while navigating the environment.
+                    </div>
+                    <div class="date">Posted by Colin Gay on 3 Feb 2020</div>
+                    <div class="splitline"></div>
+                </div>
+            <div class="post">
+                <!-- Date, Title, Content -->
+                <div class="title">Inverse Kinematics II</div>
+                <div class="content">
+                    While the basic idea is shared between all the paper presented in this session, each brings to the table their own improvement to the technique, making IK work faster or more generally. <br><br>
+
+                    I am curious to see how these techniques fare against traditioanl Jacobian techniques, and how they perform in a professional setting both in terms of speed as well as the visual result. Bringing forward a question from the last session: do animators have a choice of several techniques, and do they prefer certain results over others? 
+                </div>
+                <div class="date">Posted by Colin Gay on 3 Feb 2020</div>
+                <div class="splitline"></div>
+            </div>
+            <div class="post">
+                <!-- Date, Title, Content -->
                 <div class="title">Inverse Kinematics I</div>
                 <div class="content">
                     It is interesting to see that inverse kinematics uses similar techniques to solving other non-linear systems in other applications; for instance, image homologies and 3D reconstruction. The lecture brought up several questions:
